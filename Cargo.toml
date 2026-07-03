@@ -15,7 +15,7 @@ version      = "2.2.0"
 [workspace.dependencies]
 # Keep this exact: packaged `dix` resolves `dix-diff` from crates.io after Cargo
 # strips the local path, so release `dix-diff` before `dix`.
-dix-diff = { path = "crates/dix-diff" }
+dix-diff = { path = "crates/dix-diff", version = "2.1.0" }
 
 clap                = { features = [ "derive" ], version = "4.5.37" }
 clap-verbosity-flag = "3.0.2"
